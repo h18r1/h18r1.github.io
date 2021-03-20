@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .navbar {
+        display: flex;
+        width: 100%;
+        background-color: chartreuse;
+        justify-content: space-between;
+        padding: 1em;
+    }
+    .logo {
+     color: black;
+     padding: 1em; 
+     font-weight: bold;  
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .menu a {
+        color: khaki;
+        padding: 1em;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    .first, .second, .third {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .first {
+        background-color: lime;
+    }
+    .second {
+        background-color: orangered;}
+    .third {
+        background-color: gold;
+    }
+    .contaner {
+        border: 5px solid yellow;
+        padding: 5em;
+        border-radius: 5px;
+        transition: all ease 1s;
+    }
+    .contaner a {
+         font-size: 2em;
+         color: white ;
+         text-decoration: none;
+         font-weight: bold;
+    }
+    .contaner:hover{
+         box-shadow: 4px 4px 0 0 darkgoldenrod;
+         transform: translate(-4px, -4px);
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {margin: 0;}
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            Logo
+        </div>
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#questions">Question</a>
+            <a href="#about">About me</a>
+        </div>
+    </div>
+    <div class="first" id="home">
+        <div class="contaner">
+            <a href="home.html"> Home</a> 
+        </div>
+    </div>
+    <div class="second" id="questions">
+        <div class="contaner">
+            <a href="questions.html"> Question</a>
+        </div>
+    </div>
+    <div class="third" id="about">
+        <div class="contaner">
+            <a href="adout"> About me</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
